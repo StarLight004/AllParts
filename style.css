@@ -1,0 +1,183 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+section.main-section {
+    height: 55vh;
+    display: inline-grid;
+    width: 100%;
+}
+
+
+.navbar.bg-light {
+    background-color: #f7f7f7;
+   
+  }
+  .bgimage{
+   background-repeat: no-repeat;background-size: cover;
+ 
+  }
+ 
+
+  .bgimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .bgimage::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 55vh;
+    background-image: url("https://i.ebayimg.com/images/g/yaMAAOSwFytj28~Q/s-l960.jpg"), linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+
+  }
+ 
+  .textbox {
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: fit-content;
+    border-radius: 1rem;
+    border-left: 0.5rem solid #8fdf26cc;
+    backdrop-filter: blur(1px);
+    background: rgb(52 58 63/33%);
+}
+
+figure.product-box-image {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    position: relative;
+    margin: 0px 0px 5px 0;
+}
+figure.product-box-image::after {
+    content: "";
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    left: 0;
+    width: calc(100%);
+    border-radius: 0.5rem;
+    height: calc(100%);
+    transition: .3s ease all;
+}
+.product-box-content {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    transform: translateY(-50%);
+}
+h4.product-title {
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 5px 0 #000;
+}
+img.lazy.loaded {
+    -webkit-animation: fade-in 500ms cubic-bezier(.39,.575,.565,1) forwards;
+    animation: fade-in 500ms cubic-bezier(.39,.575,.565,1) forwards;
+}
+
+.product-box-image img {
+    object-fit: cover;
+    height: 262px;
+    transition: .25s ease;
+    width: 100%;
+}
+.product-box-wrapper:hover .product-box-image img {
+    transform: scale(1.05);
+}
+.product-box-wrapper:hover .product-box-image::after {
+    background: rgba(0,0,0,.05);
+}
+
+a {
+    transition: .3s ease;
+}
+.cardbox {
+    padding: 60px 0;
+}
+.cardbox .col-xs-12.col-sm-6.col-lg-4 {
+    padding: 0 2px;
+}
+.cardbox h2 {
+  
+        border-left: 6px solid #69be28;
+        padding-left: 14px;
+        margin-bottom: 30px;
+}
+.footer {
+    position: relative;
+    background-color: #000
+}
+.footer:before {
+    content: ' ';
+    background: url(./images/border.gif) repeat-x 0 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #fff0;
+    padding: 0 0 25px;
+}
+.contact {
+    padding: 25px 0;
+}
+.footermenu {
+    color: #fff;
+    font-size: .875rem;
+    padding: 2rem 0;
+}
+.footermenu h3 {
+    font-size: 1.25rem;
+    letter-spacing: .1em;
+    font-weight: 900;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+.footermenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footermenu li {
+    margin-bottom: 0.5rem;
+}
+.footermenu p {
+    max-width: 40ch;
+    margin-bottom: 0;
+}
+.footermenu li {
+    margin-bottom: 0.5rem;
+}
+.footermenu a {
+    display: inline-block;
+    padding: 3px 0;
+    color: #fff;
+}
+.footermenu svg {
+    margin-right: 0.5rem;
+    color: #69be28;
+}
+.footermenu .socials svg {
+    font-size: 1.5rem;
+    width: 1em;
+}
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+}
+.footermenu svg {
+    margin-right: 0.5rem;
+    color: #69be28;
+}
